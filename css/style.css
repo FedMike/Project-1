@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+* ,*::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+nav, footer, header, aside {display: block}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 20px;
+}
+.header-top p {
+    font-weight: 700;
+}
+.header-nav {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.header-nav li {
+    margin: 0px 20px 0px 0px;
+}
+.header-nav a {
+    color: #000;
+    transition-duration: 300ms;
+}
+.header-nav a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+.header-bottom {
+    height: 700px;
+    background: url("/img/wall-1.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+.header-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-size: 45px;
+    text-shadow: 5px 5px 5px #000;
+    text-align: center;
+    padding: 200px 0px 0px 0px;
+}
+.header-title span {
+    text-transform: lowercase;
+}
+.cadastr {
+}
+.content-title {
+    background-color: #152c41;
+    color: #fff;
+    padding: 35px;
+    text-align: center;
+    font-size: 20px;
+}
+.sections-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 15px auto 15px auto;
+}
+.content-section {
+    display: flex;
+}
+.content-section-title {
+    flex: 0 1 50%;
+    text-align: end;
+    padding: 15px 30px 0px 0px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.content-section-list {
+    flex: 0 1 50%;
+    border-left: 2px solid rgba(0, 0, 0, 0.199);
+    font-size: 16px;
+    padding: 15px 0px 0px 30px;
+}
+.content-section-list li {
+    list-style: disc;
+    margin: 0px 0px 10px 0px;
+}
+
+.geodetic {
+}
+.geodetic-content {
+    text-align: center;
+    font-size: 18px;
+    padding: 70px 0px 70px 0px;
+    font-weight: 700;
+}
+.geodetic-content p {
+    margin-bottom: 15px;
+}
+.geodetic-content p:last-child {
+    margin: 0px;
+}
+.documentation {
+}
+.additional {
+}
+.additional-content-top {
+}
+.additional-content-bottom {
+    text-align: center;
+    font-size: 18px;
+    padding: 25px 0px 70px 0px;
+    font-weight: 700;
+}
+.additional-content-bottom p {
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #152c41;
+}
+.footer-container {
+    display: flex;
+    width: 1000px;
+    margin: 0px auto;
+}
+.footer-contacts {
+    text-align: center;
+    flex: 0 1 50%;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.footer-contacts p {
+    margin: 40px 0px 0px 0px;
+}
+.map {
+    position: relative;
+    flex: 0 1 50%;
+    height: 300px;
+    margin: 15px 5px 50px 50px;
+    background: url("/img/map.jpg") no-repeat;
+    background-size: 300px;
+}
+.pin {
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    width: 15px;
+    height: 15px;
+    border: 10px solid #f75850;
+    border-radius: 50% 50% 50% 0;
+    box-shadow: -2px 2px 2px #aaaaaa;
+    font-size: 0;
+    transform: rotate(-45deg);
+}
+.annotation {
+    position: absolute;
+    bottom: -25px;
+    padding-left: 10px;
+}
+.annotation a {
+    color: #fff;
+}
+.annotation a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-bottom {
+}
