@@ -42,6 +42,9 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
     border-bottom: 1px solid #000;
     z-index: 5;
 }
+@media screen and (max-width: 1023px) {
+    .header-top {display: none;}
+}
 .header-top p {
     font-weight: 700;
 }
@@ -66,6 +69,9 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
     height: 700px;
     background: url("../img/wall-1.jpg") 50% 50% no-repeat;
     background-size: cover;
+}
+@media screen and (max-width: 1023px) {
+    .header-bottom {margin-top: 0px;}
 }
 .header-title {
     text-transform: uppercase;
@@ -173,18 +179,35 @@ footer {
 }
 .footer-container {
     display: flex;
-    width: 1000px;
+    max-width: 1000px;
     margin: 0px auto;
+}
+@media screen and (max-width: 770px) {
+    .footer-container {
+        display: inline-block;
+        width: 100%;
+        margin: 0px auto;
+        padding: 10px;
+    }
 }
 .footer-contacts {
     text-align: center;
-    flex: 0 1 50%;
+    flex: 0 0 50%;
     font-size: 20px;
     font-weight: 700;
     color: #fff;
 }
+@media screen and (max-width: 770px) {
+    .footer-contacts {
+    }
+}
 .footer-contacts p {
-    margin: 40px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
+}
+@media screen and (max-width: 770px) {
+    .footer-contacts p:nth-child(2) {
+        margin-top: 10px;
+    }
 }
 .footer-contacts a {
     color: #fff;
@@ -192,13 +215,28 @@ footer {
 .footer-contacts a:hover {
     color: rgba(255, 255, 255, 0.5);
 }
-.map {
+.footer-map-container {
+    flex: 0 0 50%;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+@media screen and (max-width: 770px) {
+    .footer-map-container {
+        min-height: 300px;
+        padding: 25px;
+    }
+}
+.footer-map {
     position: relative;
-    flex: 0 1 50%;
     height: 300px;
-    margin: 15px 5px 50px 50px;
     background: url("../img/map.jpg") no-repeat;
     background-size: 300px;
+}
+@media screen and (max-width: 770px) {
+    .footer-map {
+        width: 300px;
+        margin: 0px auto;
+    }
 }
 .pin {
     position: absolute;
@@ -224,5 +262,6 @@ footer {
 .annotation a:hover {
     color: rgba(255, 255, 255, 0.5);
 }
+
 .footer-bottom {
 }
