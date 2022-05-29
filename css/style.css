@@ -75,6 +75,12 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
     text-shadow: 5px 5px 5px #000;
     text-align: center;
     padding: 200px 0px 0px 0px;
+    opacity: 0;
+    animation: header-title 2.5s forwards;
+}
+@keyframes header-title {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 .header-title span {
     text-transform: lowercase;
@@ -110,6 +116,12 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
     padding: 15px 30px 0px 0px;
     font-size: 18px;
     font-weight: 700;
+    opacity: 0;
+    animation: content-section-title 2.5s forwards;
+}
+@keyframes content-section-title {
+    0% {transform: translateX(-120%); opacity: 0;}
+    100% {transform: translateX(0%); opacity: 1;}
 }
 .content-section-list {
     flex: 0 1 50%;
@@ -120,8 +132,13 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 .content-section-list li {
     list-style: disc;
     margin: 0px 0px 10px 0px;
+    opacity: 0;
+    animation: content-section-list 2.5s forwards;
 }
-
+@keyframes content-section-list {
+    0% {transform: translateX(120%); opacity: 0;}
+    100% {transform: translateX(0%); opacity: 1;}
+}
 .geodetic {
 }
 .geodetic-content {
