@@ -19,7 +19,7 @@ html, body {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
-    min-width: 380px;
+    min-width: 320px;
 }
 input, button, textarea {font-family: inherit;}
 input::-ms-clear {display: none;}
@@ -117,6 +117,12 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
     text-align: center;
     font-size: 20px;
 }
+@media (max-width: 479px) {
+    .content-title {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
 .sections-container {
     display: flex;
     flex-direction: column;
@@ -125,6 +131,11 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 }
 .content-section {
     display: flex;
+}
+@media (max-width: 479px) {
+    .content-section {
+        display: block;
+    }
 }
 .content-section-title {
     flex: 0 1 50%;
@@ -135,6 +146,12 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
     opacity: 0;
     animation: content-section-title 2.5s forwards;
 }
+@media (max-width: 479px) {
+    .content-section-title {
+        font-size: 14px;
+        text-align: center;
+    }
+}
 @keyframes content-section-title {
     0% {transform: translateX(-120%); opacity: 0;}
     100% {transform: translateX(0%); opacity: 1;}
@@ -144,6 +161,11 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
     border-left: 2px solid rgba(0, 0, 0, 0.199);
     font-size: 16px;
     padding: 15px 0px 0px 30px;
+}
+@media (max-width: 479px) {
+    .content-section-list {
+        font-size: 12px;
+    }
 }
 .content-section-list li {
     list-style: disc;
@@ -181,6 +203,12 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
     padding: 25px 0px 70px 0px;
     font-weight: 700;
 }
+@media (max-width: 479px) {
+    .additional-content-bottom {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
 .additional-content-bottom p {
     margin-bottom: 20px;
 }
@@ -207,8 +235,9 @@ footer {
     font-weight: 700;
     color: #fff;
 }
-@media (max-width: 770px) {
+@media (max-width: 479px) {
     .footer-contacts {
+        font-size: 18px;
     }
 }
 .footer-contacts p {
