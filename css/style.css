@@ -302,7 +302,6 @@ footer {
 @media (max-width: 479px) {
     .annotation {
         bottom: -35px;
-        color: aqua;
     }
 }
 .annotation a {
