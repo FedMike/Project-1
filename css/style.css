@@ -150,6 +150,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
     .content-section-title {
         font-size: 14px;
         text-align: center;
+        padding: 15px 5px 0px 5px;
     }
 }
 @keyframes content-section-title {
@@ -165,6 +166,8 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 @media (max-width: 479px) {
     .content-section-list {
         font-size: 12px;
+        padding: 15px 5px 5px 30px;
+        border: none;
     }
 }
 .content-section-list li {
@@ -188,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 @media (max-width: 479px) {
     .geodetic-content {
         font-size: 14px;
-        padding: 40px 0px;
+        padding: 30px 5px;
     }
 }
 .geodetic-content p {
