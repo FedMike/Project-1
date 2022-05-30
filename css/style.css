@@ -268,7 +268,6 @@ footer {
 @media (max-width: 770px) {
     .footer-map-container {
         min-height: 300px;
-        padding: 25px 25px 35px 25px;
     }
 }
 .footer-map {
@@ -280,7 +279,7 @@ footer {
 @media (max-width: 770px) {
     .footer-map {
         width: 300px;
-        margin: 0px auto;
+        margin: 0px auto 20px auto;
     }
 }
 .pin {
@@ -299,6 +298,12 @@ footer {
     position: absolute;
     bottom: -25px;
     padding-left: 10px;
+}
+@media (max-width: 479px) {
+    .annotation {
+        bottom: -35px;
+        color: aqua;
+    }
 }
 .annotation a {
     color: #fff;
